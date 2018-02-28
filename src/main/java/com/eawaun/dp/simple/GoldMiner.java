@@ -167,7 +167,7 @@ public class GoldMiner {
         }
 
         //用上一行推出下一行
-        for (int i = 0; i < n; i++) {//0表示前1个金矿
+        for (int i = 1; i < n; i++) {//0表示前1个金矿
             for (int j = 0; j < colLength; j++) {//0表示0个矿工
                 if (j < P[i]) {
                     results[j] = prevResults[j];
