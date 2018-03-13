@@ -12,6 +12,7 @@ import java.util.Map;
 public class GoldMiner {
     /**
      * 递归解法
+     * 时间复杂度O(2^n)
      * @param n 金矿数
      * @param w 工人数
      * @param G 金矿含量数组
@@ -88,6 +89,7 @@ public class GoldMiner {
 
     /**
      * 备忘录解法
+     * 时间复杂度和空间复杂度相同，都等于备忘录中不同Key的数量
      * @param n 金矿数
      * @param w 工人数
      * @param memoMap 保存已计算过的结果
@@ -176,9 +178,7 @@ public class GoldMiner {
                 }
             }
 
-            for (int z = 0; z < results.length; z++) {
-                prevResults[z] = results[z];
-            }
+            System.arraycopy(results, 0, prevResults, 0, results.length);
         }
         return results[w];
     }

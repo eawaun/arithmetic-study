@@ -14,7 +14,7 @@ public class Quick {
         if (high <= low) {
             return;
         }
-        int j = partition(a, low, high);
+        int j = partitionV2(a, low, high);
         sort(a, low, j - 1);
         sort(a, j + 1, high);
     }
@@ -42,6 +42,18 @@ public class Quick {
         }
         exch(a, low, j);
         return j;
+    }
+
+    private static int partitionV2(Comparable[] a, int low, int high) {
+        Comparable pivot = a[low];
+        while (low < high) {
+            while (low < high && less(pivot, a[high])) --high;
+            a[low] = a[high];
+            while (low < high && less(a[low], pivot)) ++low;
+            a[high] = a[low];
+        }
+        a[low] = pivot;
+        return low;
     }
 
     public static void main(String[] args) {
