@@ -1,15 +1,15 @@
 package com.eawaun.offer.tree;
 
-public class BinaryTreeNode {
+public class TreeNode {
     private int value;
-    private BinaryTreeNode left;
-    private BinaryTreeNode right;
+    private TreeNode left;
+    private TreeNode right;
 
-    public BinaryTreeNode(int value) {
+    public TreeNode(int value) {
         this.value = value;
     }
 
-    public BinaryTreeNode(int value, BinaryTreeNode left, BinaryTreeNode right) {
+    public TreeNode(int value, TreeNode left, TreeNode right) {
         this.value = value;
         this.left = left;
         this.right = right;
@@ -23,19 +23,19 @@ public class BinaryTreeNode {
         this.value = value;
     }
 
-    public BinaryTreeNode getLeft() {
+    public TreeNode getLeft() {
         return left;
     }
 
-    public void setLeft(BinaryTreeNode left) {
+    public void setLeft(TreeNode left) {
         this.left = left;
     }
 
-    public BinaryTreeNode getRight() {
+    public TreeNode getRight() {
         return right;
     }
 
-    public void setRight(BinaryTreeNode right) {
+    public void setRight(TreeNode right) {
         this.right = right;
     }
 }
