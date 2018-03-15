@@ -24,6 +24,14 @@ public class Stack<E> {
         return null;
     }
 
+    public E peek() {
+        if (last > 0) {
+            int index = last - 1;
+            return (E) elements[index];
+        }
+        return null;
+    }
+
     public boolean isEmpty() {
         return last == 0;
     }
