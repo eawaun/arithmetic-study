@@ -2,6 +2,9 @@ package com.eawaun.offer;
 
 import com.eawaun.offer.tree.TreeNode;
 
+/**
+ * 判断二叉树是不是二叉搜索树
+ */
 public class IsBST {
 
     public static boolean isBST(TreeNode root) {

@@ -2,6 +2,9 @@ package com.eawaun.offer;
 
 import com.eawaun.offer.tree.TreeNode;
 
+/**
+ * 判断树B是否在树A中存在
+ */
 public class SubstructureInTree_18 {
 
     public static boolean hasSubtree(TreeNode root1, TreeNode root2) {

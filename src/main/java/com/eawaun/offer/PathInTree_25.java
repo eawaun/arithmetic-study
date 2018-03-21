@@ -5,6 +5,9 @@ import com.eawaun.offer.tree.TreeNode;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * 二叉搜索树中从根节点开始的路径中 和为n的路径
+ */
 public class PathInTree_25 {
 
     public static void findPath(TreeNode root, int sum) {

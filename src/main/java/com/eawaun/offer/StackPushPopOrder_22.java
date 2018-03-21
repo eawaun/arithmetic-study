@@ -2,6 +2,11 @@ package com.eawaun.offer;
 
 import com.eawaun.offer.stack.Stack;
 
+/**
+ * 给定两个数组
+ * 第一个数组表示入栈顺序
+ * 判断第二个数组是否是第一个数组的出栈顺序
+ */
 public class StackPushPopOrder_22 {
     public static boolean isPopOrder(int[] pushArray, int[] popArray) {
         if (pushArray == null || popArray == null) {

@@ -1,5 +1,8 @@
 package com.eawaun.offer;
 
+/**
+ * 输入一个字符串，对字符串中的字符进行排列组合
+ */
 public class Permutation_28 {
 
     public static void permutation(char[] chars) {

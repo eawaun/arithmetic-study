@@ -2,6 +2,9 @@ package com.eawaun.offer;
 
 import com.eawaun.offer.list.ListNode;
 
+/**
+ * 求链表的倒数第K个节点
+ */
 public class KthNodeFromEnd_15 {
     public static ListNode findKthNodeFromEnd(ListNode head, int k) {
         if (head == null || k <= 0) {

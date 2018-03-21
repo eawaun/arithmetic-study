@@ -1,5 +1,9 @@
 package com.eawaun.offer;
 
+/**
+ * n个骰子的点数
+ * 把n个骰子仍在地上，所有骰子朝上一面的点数之和为s。输入n，打印出s的所有可能的值出现的概率
+ */
 public class DiceProbability_43 {
     public static void printBrobability(int number) {
         if (number < 1) {
@@ -25,13 +29,15 @@ public class DiceProbability_43 {
 
             for (int i = k; i <= maxValue * k; i++) {
                 probabilities[1 - flag][i] = 0;
-                for (int j = 1; j <= i && j <= maxValue; j++) {
+                for (int j = 1; j < i && j <= maxValue; j++) {
                     probabilities[1 - flag][i] += probabilities[flag][i - j];
                 }
             }
 
             flag = 1 - flag;
         }
+
+        double total = Math.pow((double) maxValue, number);
 
         for (int i = number; i <= maxValue * number; i++) {
             System.out.printf("%d: %d\n", i, probabilities[flag][i]);

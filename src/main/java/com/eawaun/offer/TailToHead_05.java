@@ -3,6 +3,9 @@ package com.eawaun.offer;
 import com.eawaun.offer.list.ListNode;
 import com.eawaun.offer.stack.Stack;
 
+/**
+ * 从尾到头打印链表
+ */
 public class TailToHead_05 {
     public static void main(String[] args) {
         ListNode head = new ListNode(0);
@@ -19,6 +22,8 @@ public class TailToHead_05 {
         recursion(head);
         System.out.println();
         withStack(head);
+        System.out.println();
+        changeStruct(head);
     }
 
     public static void recursion(ListNode head) {
@@ -41,6 +46,32 @@ public class TailToHead_05 {
         while (!s.isEmpty()) {
             System.out.print(s.pop() + " ");
         }
-        System.out.println();
+    }
+
+    public static void changeStruct(ListNode head) {
+        if (head == null) {
+            return;
+        }
+
+        if (head.getNext() == null) {
+            System.out.println(head.getValue());
+        }
+
+        ListNode l1 = head;
+        ListNode l2 = head.getNext();
+        head.setNext(null);
+
+        while (l2.getNext() != null) {
+            ListNode l3 = l2.getNext();
+            l2.setNext(l1);
+            l1 = l2;
+            l2 = l3;
+        }
+        l2.setNext(l1);
+
+        while (l2 != null) {
+            System.out.print(l2.getValue() + " ");
+            l2 = l2.getNext();
+        }
     }
 }

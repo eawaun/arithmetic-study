@@ -2,6 +2,9 @@ package com.eawaun.offer;
 
 import com.eawaun.offer.list.ListNode;
 
+/**
+ * 给定一个链表和链表中的一个节点，在O(1)时间内删除这个节点
+ */
 public class DeleteNodeInList_13 {
 
     public static void deleteNode(ListNode head, ListNode toBeDeleted) {

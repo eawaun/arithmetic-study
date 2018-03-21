@@ -1,5 +1,8 @@
 package com.eawaun.offer;
 
+/**
+ * 数n二进制中1的数量
+ */
 public class NumberOf1_10 {
     public static int numberOf1(int n) {
         int count = 0;

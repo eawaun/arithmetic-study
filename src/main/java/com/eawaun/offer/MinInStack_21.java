@@ -2,6 +2,10 @@ package com.eawaun.offer;
 
 import com.eawaun.offer.stack.Stack;
 
+/**
+ * 求栈中最小值
+ * 可以随着push和pop，不断更新
+ */
 public class MinInStack_21 {
     private Stack<Integer> stack;
     private Stack<Integer> stackHelp;

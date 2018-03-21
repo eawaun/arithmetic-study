@@ -2,6 +2,9 @@ package com.eawaun.offer;
 
 import com.eawaun.offer.stack.Stack;
 
+/**
+ * 两个栈实现一个队列
+ */
 public class QueueWithTwoStacks_07 {
     public static void main(String[] args) {
         CQueue<Integer> queue = new CQueue<>();

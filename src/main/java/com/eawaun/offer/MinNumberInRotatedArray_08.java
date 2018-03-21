@@ -1,5 +1,9 @@
 package com.eawaun.offer;
 
+/**
+ * 有序数组旋转后的最小值
+ * 4 5 1 2 3
+ */
 public class MinNumberInRotatedArray_08 {
     public static int findMin(int[] a) {
         if (a == null) {

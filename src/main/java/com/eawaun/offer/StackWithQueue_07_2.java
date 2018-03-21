@@ -3,6 +3,9 @@ package com.eawaun.offer;
 import java.util.LinkedList;
 import java.util.Queue;
 
+/**
+ * 一个队列实现栈
+ */
 public class StackWithQueue_07_2 {
     public static void main(String[] args) {
         CStack<Integer> stack = new CStack<>();

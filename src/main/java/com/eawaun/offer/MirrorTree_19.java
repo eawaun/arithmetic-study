@@ -2,6 +2,9 @@ package com.eawaun.offer;
 
 import com.eawaun.offer.tree.TreeNode;
 
+/**
+ * 二叉树的镜像
+ */
 public class MirrorTree_19 {
 
     public static void mirrorRecursively(TreeNode root) {

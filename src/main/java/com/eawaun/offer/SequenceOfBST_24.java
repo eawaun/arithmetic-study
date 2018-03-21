@@ -1,5 +1,8 @@
 package com.eawaun.offer;
 
+/**
+ * 判断后序遍历是否是二叉查找树
+ */
 public class SequenceOfBST_24 {
     public static boolean verifySequenceOfBST(int[] sequence) {
         if (sequence == null || sequence.length == 0) {
